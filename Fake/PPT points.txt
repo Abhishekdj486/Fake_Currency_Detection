@@ -1,0 +1,94 @@
+Abstract
+Fake bank currency poses a significant threat to our country's financial system. During demonetization, a large amount of counterfeit money was found in circulation.
+Distinguishing fake notes from genuine ones is challenging due to their similarity. An automated system using machine learning can aid in identifying forged bank currency efficiently.
+Six supervised machine learning algorithms can be used for banknote authentication.
+The algorithms employed are: K-Nearest Neighbors (KNN), Decision Tree, Support Vector Machine (SVM), Random Forest, Logistic Regression, and Naive Bayes.
+Additionally, the LightGBM algorithm is also used.
+
+Introduction
+In our fast-paced financial world, banknotes play a critical role as a valuable asset of our country.
+However, counterfeit notes are being introduced into the market, closely resembling genuine ones, causing financial discrepancies.
+Human detection of forged bank currency is difficult due to the high precision with which fraudsters create fake notes.
+Government-designed features on banknotes help identify genuine ones, but counterfeiters mimic these features with great accuracy.
+To combat this problem, an automated system using machine learning can be implemented in banks and ATMs.
+The goal is to design an automated system to determine the legitimacy of banknotes.
+By inputting the physical features of the banknote and applying various machine learning techniques, relevant features are extracted.
+These features are then fed into SML algorithms to predict whether the note is genuine or fake.
+
+problem statement
+Developing an automated system using machine learning to detect counterfeit banknotes from genuine ones, addressing the rising concern of fake currency in the financial market.
+
+Aim
+Create an automated system to combat the rising prevalence of counterfeit banknotes in the financial market.
+Leverage machine learning algorithms to accurately identify forged banknotes based on their distinctive features.
+Safeguard the economy by ensuring the authenticity of monetary transactions and protecting businesses and individuals from financial losses due to counterfeit currency.
+
+Existing System
+Supervised machine learning (SML) is widely used for classification problems, showing promising results in medical disease detection.
+Limited research has been done applying SML algorithms to bank currency authentication.
+To detect genuine or fake banknotes, an automated system is necessary.
+The system takes an image of the banknote as input and extracts features using image processing techniques.
+SML algorithms are then employed to predict whether the note is authentic or counterfeit.
+Notably, there is a gap in the research on this subject, indicating an opportunity for further exploration and development.
+
+Proposed system
+The proposed system utilized several popular algorithms, including KNN, Decision Tree, SVM, Random Forest, Logistic Regression, and Naive Bayes.
+Additionally, the LightGBM algorithm was introduced as an extension to the existing set of algorithms.
+The performance of LightGBM was compared against the other algorithms used in the study.
+This comparison aimed to assess the effectiveness and efficiency of LightGBM for bank currency authentication.
+The inclusion of LightGBM expands the scope of the research and allows for a more comprehensive evaluation of different machine learning approaches.
+
+Feasibility study
+ Operational Feasibility
+The proposed system should seamlessly integrate with existing bank and ATM operations.
+Adequate resources, technical expertise, and support must be available for implementation and maintenance.
+End-users, such as bank staff and customers, should be willing to adopt and utilize the system effectively.
+The system should comply with legal and regulatory requirements.
+Scalability and future growth considerations should be taken into account for sustained performance.
+Technical Feasibility
+The purpose of this study is to assess the technical feasibility of the system.
+The system must not impose a high demand on the available technical resources.
+High demands on the technical resources may lead to an excessive burden on the client.
+The developed system should have modest resource requirements, necessitating minimal or no changes for implementation.
+ Economic Feasibility
+The purpose of this study is to assess the economic impact of the system on the organization.
+This project is developed with a limited budget for research and development of the system, so expenditures must be justified.
+The developed system is within the allocated budget, primarily due to the utilization of freely available technologies.
+
+System Enviroment
+ HARDWARE REQUIREMENTS
+Processor			: minimum intel i3
+RAM			:  minimum 4GB
+Hard disk 			: minimum 250GB
+ SOFTWARE REQUIREMENTS 
+Operating system		: Windows 10
+Technology		: Python 3.0 version, Visual Studio
+Framework		: Django
+
+Modules
+Login
+Allows users to authenticate and access the system securely.
+Provides user-specific access to the functionalities of the application.
+Upload Dataset
+Enables users to upload datasets from local storage or external sources.
+Validates the format and size of the uploaded data before processing.
+Preprocess Dataset
+Performs data cleaning, normalization, and transformation on the uploaded dataset.
+Handles missing values and prepares the data for training machine learning models.
+Train ML Algorithms
+Trains machine learning algorithms using the preprocessed dataset.
+Evaluates and selects the best-performing algorithm for Fake Currency Detection.
+Fake Currency Detection:
+Utilizes the trained ML model to detect fake currency from given input data.
+Generates prediction results and provides insights on currency authenticity.
+Logout:
+Allows users to securely log out from the system and terminate their session.
+Ensures the protection of user data and privacy.
+
+Conclusion
+In this study, I 'have conducted a comprehensive analysis of various machine learning algorithms applied to the banknote authentication dataset sourced from the UCI Machine Learning repository.
+I 'have evaluated the performance of six popular algorithms, namely Support Vector Machine (SVM), Logistic Regression (LR), Naive Bayes (NB), Decision Tree (DT), Random Forest (RF), and k-Nearest Neighbors (KNN).
+As an extension to this analysis, I 'have also introduced the LIGHTGBM algorithm, a gradient boosting framework, to further enhance prediction accuracy.
+In Conclusion, these findings emphasize the importance of algorithm selection and parameter tuning in achieving optimal predictive performance.
+
+

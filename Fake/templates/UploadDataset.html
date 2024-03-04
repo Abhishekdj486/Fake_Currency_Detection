@@ -1,0 +1,40 @@
+{% extends 'nav.html' %}
+{% load static %}
+{% block content %}
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script LANGUAGE="Javascript" >
+function validate(){
+	var x=document.forms["f1"]["t1"].value;
+
+	if(x == null || x==""){
+		window.alert("Dataset file must be upload");
+		document.f1.t1.focus();
+		return false;
+	}
+	return true;
+    
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+    <div class="centered-div">
+        <form name="f1" method="post" action={% url 'UploadDatasetAction' %} enctype="multipart/form-data" OnSubmit="return validate()">
+            {% csrf_token %}<br/><center>
+            <h3><b>Upload Dataset Screen</b></h3>
+        
+            <font size="" color="black"><center>{{ data }}</center></font>
+                            
+            <table align="center" width="80" >
+                <tr><td><font size="" color="black">Upload&nbsp;Dataset</b></td><td><input type="file" name="t1" style="font-family: Comic Sans MS" size="30"/></td></tr>      
+                <tr><td></td><td><input type="submit" value="Submit">
+                </td>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}
