@@ -1,0 +1,45 @@
+{% extends 'nav.html' %}
+{% load static %}
+{% block content %}
+{% load static %}
+<html>
+<head>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<script LANGUAGE="Javascript" >
+		function validate(){
+			var x=document.forms["f1"]["t1"].value;
+		
+			if(x == null || x==""){
+				window.alert("Dataset file must be upload");
+				document.f1.t1.focus();
+				return false;
+			}
+			return true;
+		}
+				
+			
+			</script>
+</head>
+<body>
+	<div class="centered-div">
+			<center>
+		<form name="f1" method="post" action={% url 'FakeDetectionAction' %} enctype="multipart/form-data" OnSubmit="return validate()">
+			{% csrf_token %}<br/>
+		<h3><b>Upload Test Dataset Screen</b></h3>
+   
+		<font size="" color="black" style="font-family: 'Lora', serif"><center>{{ data }}</center></font>
+							
+							<table align="center" width="80" >
+				<tr><td><font size="" color="black">Upload&nbsp;Test&nbsp;Dataset</b></td><td><input type="file" name="t1" style="font-family: Comic Sans MS" size="30"/></td></tr>      
+			
+			
+				<tr><td></td><td><input type="submit" value="Submit">
+				</td>
+				</table>
+				<br/><br/><br/><br/>
+					</div>		
+					</div>			
+		</body>
+	</div>
+</html>
+{% endblock %}

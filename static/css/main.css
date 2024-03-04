@@ -1,0 +1,35 @@
+  /* Navbar Styles */
+  .navbar{
+    background-color: rgb(244, 196, 66);
+  }
+  .navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Lobster', cursive;
+  }
+  .navbar-brand:hover{
+    color: black;
+  }
+  .nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+  }
+  .nav-link:hover{
+    color: black;
+  }
+  /* Main Section Styles */
+  .main{
+    background: no-repeat;
+    background-size: 20%;
+    height: 100vh;
+    background-position: right center;
+    width: 100%;
+  }
+  .main h1{
+    font-size: 4rem;
+    font-weight: 750;
+    color: rgb(255, 183, 0);
+  }
